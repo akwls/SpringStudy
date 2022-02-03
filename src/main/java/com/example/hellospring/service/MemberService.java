@@ -21,6 +21,7 @@ public class MemberService {
 
     // 회원가입
     public long join(Member member) {
+
         validateDuplicateMember(member);
 
         memberRepository.save(member);
